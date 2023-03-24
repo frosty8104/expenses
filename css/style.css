@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Source Code Pro", sans-serif;
+    background-color: #aaabe4;
+    color: #3a3dd8;
+    font-size: 16px;
+}
+h1 {
+    width: 100%;
+    padding: 1em;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    font-family: "Source Code Pro", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+.expenses {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.expenses li {
+    padding: 0.55em 0;
+}
+.results {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0;
+    list-style: none;
+}
+.results li {
+    padding: 1em;
+    background: #fff;
+}
+.hide {
+    display: none;
+}
+button.show-results {
+    width: 50%;
+    padding: 1em;
+    color: #3a3dd8;
+    font-size: 1.25em;
+    align-self: center;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+button:actuve {
+    transform: scale(0.98);
+}
+@media screen and (min-width: 800px) {
+    button.show-results {
+        width: 45%;
+        font-size: 1.5em;
+    }
+}
